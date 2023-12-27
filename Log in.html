@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+<!-- GOOGLE FONTS (POPPINS) -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@100;200;300;400;500;600;700;&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Log in.css">
+    
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+   <nav>
+      <div class="container nav_container">
+        <div class="logo">
+            <a href="index.html"><img src="Images/IMG-20230902-WA0001-removebg-preview.png" width="200px"></a>
+            </div>
+          <ul class="nav_menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="course.html">Courses</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="Log in.html">Log in</a></li>
+          </ul>
+          <button id="open-menu-btn"><i class='bx bx-menu'></i></button>
+          <button id="open-menu-btn"><i class='bx bx-closet'></i></i></button>
+      </div>
+  </nav>
+  <div class="wrapper">
+    <form action="">
+        <h1>Login</h1>
+        <div class="input-box">
+           <input type="text" placeholder="Username" required>
+           <i class='bx bxs-user'></i>
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="Password"
+             required>
+             <i class='bx bxs-lock-alt'></i>
+         </div>
+         <div class="remember-forgot">
+            <label><input type="checkbox">Remember Me</label>
+            <a href="#">Forgot Password</a>
+         </div>
+         <button type="submit" class="btn">Login</button>
+         <div class="register-link">
+            <p>Don't have an account? <a href="#">Register</a></p>
+         </div>
+    </form>
+  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+ <script src="/index.js"></script>
+
+ <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // when window width is >= 600px
+      breakpoint: {
+        600: {
+            slidesPerView: 4 
+        }
+      }
+    });
+  </script>
+  
+  
+  
+  
+  
+</body>
+</html>
